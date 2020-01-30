@@ -12,7 +12,7 @@ const showOptions = props => {
         <Link to={`/animation/${id}/dealWithIt`}>Deal with it</Link><br></br>
       </ul>
       <Link to={`/showcharacter/${id}`}>GO BACK</Link><br></br>
-      <Link to="/">HOME</Link>
+      <Link to="/chargrid">HOME</Link>
     </>
   )
 }
