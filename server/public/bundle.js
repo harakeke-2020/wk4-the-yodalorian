@@ -98,13 +98,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
 var Animation = function Animation(props) {
+  var _React$createElement;
+
   var id = props.match.params.id;
   var name = props.match.params.name;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Animation displays here in this route. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Display (", id, "'s) animation (", name, ")"));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Display (", id, "'s) animation (", name, ")"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", (_React$createElement = {
+    className: "dealWithIt"
+  }, _defineProperty(_React$createElement, "className", "character"), _defineProperty(_React$createElement, "src", "yoda.png"), _React$createElement)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "glasses",
+    src: "glasses.png"
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Animation);
