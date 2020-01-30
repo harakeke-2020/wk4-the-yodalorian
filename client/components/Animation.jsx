@@ -6,7 +6,10 @@ const Animation = props => {
   return (
     <>
     <h1>Animation displays here in this route. </h1>
+    <img src={`/${id}.png`} alt="Image of character"/>
     <h1>Display ({id}'s) animation ({name})</h1>
+    <Link to={`/showOptions/${id}`}>GO BACK</Link><br></br>
+    <Link to="/">HOME</Link>
     </>
   )
 }

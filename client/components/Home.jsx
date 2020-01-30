@@ -1,8 +1,5 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
-import yoda from '../../server/public/Images/yoda.png' // with import
-
-console.log(yoda)
 
 const Home = () => {
   return (
@@ -11,7 +8,8 @@ const Home = () => {
 
     <p>Stretch goal: grid of characters would display here</p>
     <ul>
-      <Link to="/showcharacter/yoda"><img src={yoda} alt="Image of Yoda"/></Link>
+      <Link to="/showcharacter/yoda"><img src="/yoda.png" alt="Image of Yoda"/>Show</Link>
+      
     </ul>
     </>
   )
