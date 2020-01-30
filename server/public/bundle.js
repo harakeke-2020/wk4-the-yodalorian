@@ -195,63 +195,63 @@ var CharacterGrid = function CharacterGrid() {
     className: "grid-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "topleft",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/yoda.png"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/yoda.png",
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "topmiddle",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/jabba.png"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/jabba.png",
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "topright",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/niennunb"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/niennunb.jpg",
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "centerleft",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/jarjar.jpg"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/jarjar.jpg",
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "centermiddle",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/maxribo.jpg"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/maxribo.jpg",
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "centerright",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/ewok.jpg"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/ewok.jpg",
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "bottomleft",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/bobafett.jpg"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/bobafett.jpg",
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "bottommiddle",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/gremlin.jpeg"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/gremlin.jpeg",
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "bottomright",
-    to: "/showcharacter/yoda"
+    to: "/showcharacter/EG-series_power_droid.png"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/EG-series_power_droid.png",
@@ -318,13 +318,15 @@ __webpack_require__.r(__webpack_exports__);
 
 var showCharacter = function showCharacter(props) {
   var id = props.match.params.id;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Click the image to see animation options"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  console.log(id);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Click the image to see animation options"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/showOptions/".concat(id)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/".concat(id, ".png"),
-    alt: "Image of Yoda"
-  }), "Show"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/"
+    className: "home-char-img",
+    src: "/Images/".concat(id),
+    alt: "Image of ".concat(id)
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/chargrid"
   }, "HOME"));
 };
 
@@ -350,7 +352,8 @@ __webpack_require__.r(__webpack_exports__);
 var showOptions = function showOptions(props) {
   var id = props.match.params.id;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/".concat(id, ".png"),
+    className: "home-char-img",
+    src: "/Images/".concat(id),
     alt: "Image of character"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Click the link to animate the character"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/animation/".concat(id, "/darkside")
@@ -359,7 +362,7 @@ var showOptions = function showOptions(props) {
   }, "Deal with it"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/showcharacter/".concat(id)
   }, "GO BACK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/"
+    to: "/chargrid"
   }, "HOME"));
 };
 
