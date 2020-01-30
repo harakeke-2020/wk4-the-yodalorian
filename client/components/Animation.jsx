@@ -6,9 +6,12 @@ const Animation = props => {
   const name = props.match.params.name
   return (
     <>
+
     <h2>Display ({id}'s) animation ({name})</h2>
-    <img className="dealWithIt" className="character" src="yoda.png" />
+    <img src={`/${id}.png`} alt="Image of character"/>
     {<img className="glasses" src="glasses.png"/>}
+    <Link to={`/showOptions/${id}`}>GO BACK</Link><br></br>
+    <Link to="/">HOME</Link>
     </>
   )
 }
