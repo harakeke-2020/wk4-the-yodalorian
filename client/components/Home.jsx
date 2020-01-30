@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <>
     <h1>Welcome</h1>
-
     
-    <Link to="/showcharacter/yoda">Show character</Link>
+    <p>Stretch goal: show grid of characters would display here</p>
+    <Link to="/showcharacter/yoda">Show Yoda</Link>
     </>
   )
 }

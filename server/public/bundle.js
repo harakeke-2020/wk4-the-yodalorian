@@ -102,7 +102,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Animation = function Animation(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Display ", props.match.params.id, "'s animation ", props.match.params.name));
+  var id = props.match.params.id;
+  var name = props.match.params.name;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Animation displays here in this route. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Display (", id, "'s) animation (", name, ")"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Animation);
@@ -171,9 +173,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Welcome"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Welcome"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Stretch goal: show grid of characters would display here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/showcharacter/yoda"
-  }, "Show character"));
+  }, "Show Yoda"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -199,9 +201,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var showCharacter = function showCharacter(props) {
   var id = props.match.params.id;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Click me"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "image of ", id, " displays here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/showOptions/".concat(id)
-  }, "Link to showoptions"));
+  }, "Link to show options"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (showCharacter);
@@ -225,15 +227,15 @@ __webpack_require__.r(__webpack_exports__);
 
 var showOptions = function showOptions(props) {
   var id = props.match.params.id;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Image of ", id, " displays here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "req.params.id"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/animation/".concat(id, "/flip")
-  }, "link to flip"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "link to flip"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/animation/".concat(id, "/dance")
-  }, "link to dance"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "link to dance"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/animation/".concat(id, "/rotate")
-  }, "link to rotate")));
+  }, "link to rotate"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (showOptions);

@@ -5,12 +5,13 @@ const showOptions = props => {
   const id = props.match.params.id
   return (
     <>
+    <span>Image of {id} displays here</span>
       <img src="req.params.id"></img>
       <ul>
         
-        <Link to={`/animation/${id}/flip`}>link to flip</Link>
-        <Link to={`/animation/${id}/dance`}>link to dance</Link>
-        <Link to={`/animation/${id}/rotate`}>link to rotate</Link>
+        <Link to={`/animation/${id}/flip`}>link to flip</Link><br></br>
+        <Link to={`/animation/${id}/dance`}>link to dance</Link><br></br>
+        <Link to={`/animation/${id}/rotate`}>link to rotate</Link><br></br>
       </ul>
     </>
   )

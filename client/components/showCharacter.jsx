@@ -7,9 +7,9 @@ const showCharacter = props => {
   const id = props.match.params.id
   return (
     <>
-      <span>Click me</span>
+      <span>image of {id} displays here</span>
 
-      <Link to={`/showOptions/${id}`}>Link to showoptions</Link>
+      <Link to={`/showOptions/${id}`}>Link to show options</Link>
     </>
   )
 }
