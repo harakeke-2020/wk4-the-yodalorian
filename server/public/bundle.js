@@ -103,11 +103,18 @@ __webpack_require__.r(__webpack_exports__);
 
 var Animation = function Animation(props) {
   var id = props.match.params.id;
-  var name = props.match.params.name;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Animation displays here in this route. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  var name = props.match.url;
+  var index = name.lastIndexOf('/') + 1;
+  name = name.slice(index);
+  var classes = name + ' character';
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Display ", id, "'s animation ", name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/".concat(id, ".png"),
-    alt: "Image of character"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Display (", id, "'s) animation (", name, ")"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    alt: "Image of character",
+    className: classes
+  }), name === 'dealWithIt' && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "glasses",
+    src: "glasses.png"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/showOptions/".concat(id)
   }, "GO BACK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/"
@@ -345,12 +352,10 @@ var showOptions = function showOptions(props) {
     src: "/".concat(id, ".png"),
     alt: "Image of character"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Click the link to animate the character"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/animation/".concat(id, "/flip")
-  }, "link to flip"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/animation/".concat(id, "/dance")
-  }, "link to dance"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/animation/".concat(id, "/rotate")
-  }, "link to rotate"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/animation/".concat(id, "/darkside")
+  }, "Convert to darkside"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/animation/".concat(id, "/dealWithIt")
+  }, "Deal with it"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/showcharacter/".concat(id)
   }, "GO BACK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/"

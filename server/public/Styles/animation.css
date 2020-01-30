@@ -1,0 +1,127 @@
+.character {
+  max-width: 50%;
+  position: absolute;
+}
+
+.darkside {
+  animation-duration: 1s;
+  animation-name: darkside;
+  animation-iteration-count: infinite;
+}
+
+@keyframes darkside {
+  from {
+    filter: invert(0);
+  }
+  50% {
+    filter: invert(1);
+  }
+  to {
+    filter: invert(0);
+  }
+}
+
+/* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/food/foo-3/foo263.ani), url(http://cur.cursors-4u.net/food/foo-3/foo263.png), auto !important;} /* End http://www.cursors-4u.com */
+
+     /**
+      * dealWithIt
+      * - Sunglasses and coolness.
+      */
+      @keyframes dealWithIt {
+
+        1% {
+          transform: translate3d(0,0,0) scale(1);
+          opacity: 1;
+        }
+ 
+ 
+        30% {
+          transform: translate3d(0,160px,0) scale(1);
+          opacity: 1;
+        }
+ 
+        70% {
+          transform: translate3d(0,160px,0) scale(1);
+          opacity: 1;
+        }
+ 
+        85% {
+          transform: translate3d(0,160px,0) scale(1);
+          opacity: 1;
+        }
+ 
+        99% {
+          transform: translate3d(0,-2000px,0) scale(1);
+        }
+ 
+        to {
+          visibility: hidden;
+          opacity: 0;
+        }
+ 
+      }
+ 
+      @keyframes dealWithItNorm {
+ 
+        1% {
+ 
+        }
+ 
+        30% {
+          transform: translate3d(0,0px,0) scale(1);
+          opacity: 1;
+        }
+ 
+        40% {
+          transform: rotate(10deg);
+          opacity: 1;
+        }
+ 
+        50% {
+          transform: rotate(-10deg);
+        }
+ 
+        60% {
+          transform: rotate(10deg);
+        }
+ 
+        70% {
+          transform: rotate(-10deg);
+        }
+ 
+        80% {
+          transform: rotate(0deg);
+        }
+ 
+ 
+      }
+ 
+       .dealWithIt {
+         /*position: absolute;*/
+         animation-timing-function: ease-in-out;
+         transform-origin: bottom center;
+         animation-name: dealWithItNorm;
+         animation-duration: 5s;
+       }
+ 
+       .glasses {
+         height: 300px;
+         width: 300px;
+         animation-name: glasses;
+         animation-duration: 5s;
+         position: relative;
+         z-index: 5;
+         visibility: hidden;
+       }
+       
+       @keyframes glasses {
+         from {
+          transform: translate(70%, -200%);
+          visibility: visible
+         }
+         to {
+          transform: translate(70%, 10%);
+          visibility: visible
+         }
+       }
+
