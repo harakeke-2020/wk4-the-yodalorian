@@ -1,5 +1,10 @@
 body {
   font-size: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  display: none;
 }
 
 /* styling for character grid */
@@ -125,3 +130,6 @@ body {
   }
 }
 
+.bigtitle {
+  max-width: 50vw;
+}

@@ -1,6 +1,6 @@
 .character {
   max-width: 50%;
-  position: absolute;
+  position: fixed;
 }
 
 .darkside {
