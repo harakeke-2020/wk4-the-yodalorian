@@ -5,11 +5,12 @@ import showOptions from './showOptions'
 
 const showCharacter = props => {
   const id = props.match.params.id
+  console.log(id)
   return (
     <>
-      <span>Click the image to see animation options</span>
-      <Link to={`/showOptions/${id}`}><img src={`/${id}.png`} alt="Image of Yoda"/>Show</Link><br></br>
-      <Link to="/">HOME</Link>
+      <span>Click the image to see animation options</span><br></br>
+      <Link to={`/showOptions/${id}`}><img className="home-char-img" src={`/Images/${id}`} alt={`Image of ${id}`}/></Link><br></br>
+      <Link to="/chargrid">HOME</Link>
     </>
   )
 }

@@ -5,7 +5,7 @@ const showOptions = props => {
   const id = props.match.params.id
   return (
     <>
-    <img src={`/${id}.png`} alt="Image of character"/>
+    <img className="home-char-img" src={`/Images/${id}`} alt="Image of character"/>
       <ul>
         <h1>Click the link to animate the character</h1>
         <Link to={`/animation/${id}/darkside`}>Convert to darkside</Link><br></br>
