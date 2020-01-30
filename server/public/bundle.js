@@ -134,6 +134,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Home */ "./client/components/Home.jsx");
 /* harmony import */ var _showOptions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./showOptions */ "./client/components/showOptions.jsx");
 /* harmony import */ var _Animation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Animation */ "./client/components/Animation.jsx");
+/* harmony import */ var _CharacterGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CharacterGrid */ "./client/components/CharacterGrid.jsx");
+
 
 
 
@@ -147,6 +149,9 @@ var App = function App() {
     path: "/",
     component: _Home__WEBPACK_IMPORTED_MODULE_3__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/chargrid",
+    component: _CharacterGrid__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/showcharacter/:id",
     component: _showCharacter__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
@@ -159,6 +164,94 @@ var App = function App() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./client/components/CharacterGrid.jsx":
+/*!*********************************************!*\
+  !*** ./client/components/CharacterGrid.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+var CharacterGrid = function CharacterGrid() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "SELECT YOUR CHARACTER"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "grid-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "topleft",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/yoda.png",
+    alt: "Image of Character"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "topmiddle",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/jabba.png",
+    alt: "Image of Character"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "topright",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/niennunb.jpg",
+    alt: "Image of Character"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "centerleft",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/jarjar.jpg",
+    alt: "Image of Character"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "centermiddle",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/maxribo.jpg",
+    alt: "Image of Character"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "centerright",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/ewok.jpg",
+    alt: "Image of Character"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "bottomleft",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/bobafett.jpg",
+    alt: "Image of Character"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "bottommiddle",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/gremlin.jpeg",
+    alt: "Image of Character"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "bottomright",
+    to: "/showcharacter/yoda"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "home-char-img",
+    src: "/Images/EG-series_power_droid.png",
+    alt: "Image of Character"
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CharacterGrid);
 
 /***/ }),
 
@@ -178,12 +271,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Welcome"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Stretch goal: grid of characters would display here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/showcharacter/yoda"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/yoda.png",
-    alt: "Image of Yoda"
-  }), "Show")));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "fade"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "star-wars"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "crawl"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Episode IV"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "A New Hope")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "During the battle, Rebel spies managed to steal secret plans to the Empire\u2019s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pursued by the Empire\u2019s sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy\u2026")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/chargrid",
+    className: "gridlink"
+  }, "Select Your Character"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
