@@ -8,7 +8,7 @@ const showCharacter = props => {
   return (
     <>
       <span>image of {id} displays here</span>
-
+      
       <Link to={`/showOptions/${id}`}>Link to show options</Link>
     </>
   )
