@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
+
 const Animation = props => {
   const id = props.match.params.id
   const name = props.match.params.name
