@@ -16,7 +16,7 @@ const showOptions = props => {
           <Link to={`/animation/${id}/lightspeed`}><li>Lightspeed</li></Link>
           <Link to={`/animation/${id}/flyin`}><li>Cant touch this</li></Link>
 
-          <a href="https://vimeo.com/64357616"><li>Kill baby yoda</li></a>
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"><li>Kill baby yoda</li></a>
 
         </ul>
         <Link to="/chargrid">Or, choose another character</Link><br></br>
