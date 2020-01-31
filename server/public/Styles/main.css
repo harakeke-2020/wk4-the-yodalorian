@@ -6,6 +6,10 @@ h1 {
   display: none;
 }
 
+audio {
+  display: none;
+}
+
 /* styling for character grid */
 
 .grid-container {
