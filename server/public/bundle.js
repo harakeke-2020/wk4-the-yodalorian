@@ -385,7 +385,9 @@ var showOptions = function showOptions(props) {
     to: "/animation/".concat(id, "/darkside")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Convert to darkside")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/animation/".concat(id, "/dealWithIt")
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Deal with it"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Deal with it")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/animation/".concat(id, "/lightspeed")
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Lightspeed"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/chargrid"
   }, "Or, choose another character"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))));
 };
