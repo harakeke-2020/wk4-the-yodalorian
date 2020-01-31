@@ -2,6 +2,10 @@ body {
   font-size: 20px;
 }
 
+h1 {
+  display: none;
+}
+
 /* styling for character grid */
 
 .grid-container {
@@ -124,3 +128,55 @@ body {
   }
 }
 
+
+
+.bigtitle {
+  max-width: 50vw;
+  max-height: 20vh;
+  padding-left: 25%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/* Character page styles start here */
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-basis: content;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  padding-left: 4em;
+  margin: 0;
+}
+
+.nav-char {
+  max-width: 70%;
+}
+
+ul {
+  padding: 2em;
+}
+
+a {
+  color: black;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+h2 {
+  margin: 0;
+}
+
+.hate {
+  padding-left: 40vw;
+}

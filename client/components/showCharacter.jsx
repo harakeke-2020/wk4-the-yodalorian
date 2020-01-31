@@ -8,9 +8,11 @@ const showCharacter = props => {
   console.log(id)
   return (
     <>
-      <span>Click the image to see animation options</span><br></br>
-      <Link to={`/showOptions/${id}`}><img className="home-char-img" src={`/Images/${id}`} alt={`Image of ${id}`}/></Link><br></br>
-      <Link to="/chargrid">HOME</Link>
+    <Link to="/chargrid"><img className="bigtitle" src="/Images/title.png" /></Link>
+    <div className="container">
+      <Link to={`/showOptions/${id}`}><img className="nav-char" src={`/Images/${id}`} alt={`Image of ${id}`}/></Link>
+      <h2>Click the image to see animation options</h2>
+    </div>
     </>
   )
 }

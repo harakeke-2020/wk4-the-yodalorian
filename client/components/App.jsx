@@ -9,6 +9,7 @@ import CharacterGrid from './CharacterGrid'
 const App = () => {
   return (
     <>
+      <h1>The Yodalorian</h1>
       <Route exact path="/" component={Home}></Route>
       <Route path="/chargrid" component={CharacterGrid}></Route>
       <Route path="/showcharacter/:id" component={showCharacter}></Route>

@@ -107,8 +107,16 @@ var Animation = function Animation(props) {
   var index = name.lastIndexOf('/') + 1;
   name = name.slice(index);
   var classes = name + ' character';
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Display ", id, "'s animation ", name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/".concat(id, ".png"),
+  console.log(id);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/chargrid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "bigtitle",
+    src: "/Images/title.png"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/Images/".concat(id),
     alt: "Image of character",
     className: classes
   }), name === 'dealWithIt' && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -116,9 +124,9 @@ var Animation = function Animation(props) {
     src: "glasses.png"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/showOptions/".concat(id)
-  }, "GO BACK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/"
-  }, "HOME"));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "hate"
+  }, "Choose another animation")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Animation);
@@ -151,7 +159,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Yodalorian"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/",
     component: _Home__WEBPACK_IMPORTED_MODULE_3__["default"]
@@ -190,7 +198,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var CharacterGrid = function CharacterGrid() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "SELECT YOUR CHARACTER"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/chargrid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "bigtitle",
+    src: "/Images/title.png"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "SELECT YOUR CHARACTER"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "grid-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "topleft",
@@ -208,7 +221,7 @@ var CharacterGrid = function CharacterGrid() {
     alt: "Image of Character"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "topright",
-    to: "/showcharacter/niennunb"
+    to: "/showcharacter/niennunb.jpg"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/niennunb.jpg",
@@ -318,15 +331,20 @@ __webpack_require__.r(__webpack_exports__);
 var showCharacter = function showCharacter(props) {
   var id = props.match.params.id;
   console.log(id);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Click the image to see animation options"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/chargrid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "bigtitle",
+    src: "/Images/title.png"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/showOptions/".concat(id)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "home-char-img",
+    className: "nav-char",
     src: "/Images/".concat(id),
     alt: "Image of ".concat(id)
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/chargrid"
-  }, "HOME"));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Click the image to see animation options")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (showCharacter);
@@ -350,19 +368,26 @@ __webpack_require__.r(__webpack_exports__);
 
 var showOptions = function showOptions(props) {
   var id = props.match.params.id;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/chargrid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "bigtitle",
+    src: "/Images/title.png"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "home-char-img",
     src: "/Images/".concat(id),
     alt: "Image of character"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Click the link to animate the character"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "list"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Choose an animation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/animation/".concat(id, "/darkside")
-  }, "Convert to darkside"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Convert to darkside")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/animation/".concat(id, "/dealWithIt")
-  }, "Deal with it"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/showcharacter/".concat(id)
-  }, "GO BACK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Deal with it"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/chargrid"
-  }, "HOME"));
+  }, "Or, choose another character"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (showOptions);

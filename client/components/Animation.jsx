@@ -7,15 +7,16 @@ const Animation = props => {
   const index = (name.lastIndexOf('/') + 1)
   name = name.slice(index)
   let classes = name + ' character'
+  console.log(id)
 
   return (
     <>
-
-    <h2>Display {id}'s animation {name}</h2>
-    <img src={`/${id}.png`} alt="Image of character" className={classes}/>
-    {name === 'dealWithIt' && <img className="glasses" src="glasses.png"/>}
-    <Link to={`/showOptions/${id}`}>GO BACK</Link><br></br>
-    <Link to="/">HOME</Link>
+     <Link to="/chargrid"><img className="bigtitle" src="/Images/title.png" /></Link>
+    <div className="container">
+      <img src={`/Images/${id}`} alt="Image of character" className={classes}/>
+      {name === 'dealWithIt' && <img className="glasses" src="glasses.png"/>}
+      <Link to={`/showOptions/${id}`}><h3 className="hate">Choose another animation</h3></Link><br></br>
+    </div>
     </>
   )
 }
