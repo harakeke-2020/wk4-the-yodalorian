@@ -151,7 +151,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "React development has begun!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/",
     component: _Home__WEBPACK_IMPORTED_MODULE_3__["default"]
@@ -288,10 +288,10 @@ var Home = function Home() {
     className: "crawl"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Episode IV"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "A New Hope")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "During the battle, Rebel spies managed to steal secret plans to the Empire\u2019s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pursued by the Empire\u2019s sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy\u2026")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/chargrid",
-    className: "gridlink"
-  }, "Select Your Character"));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Episode X"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Yodalorian")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is a period of SQL war. Rebel coders, striking from a hidden base, have won their first victory against the evil Galactic Empire."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rebel coders have managed to harness the force to transform the franchises most beloved characters."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Defeat the Empire\u2019s sinister agents by selecting your favorite character and applying a range of powerful transformations."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Click Below to Begin.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "gridlink",
+    to: "/chargrid"
+  }, "Select Your Character")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);

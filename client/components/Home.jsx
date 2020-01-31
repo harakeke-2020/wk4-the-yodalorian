@@ -12,17 +12,17 @@ const Home = () => {
         <div className="crawl">
 
           <div className="title">
-            <p>Episode IV</p>
-            <h1>A New Hope</h1>
+            <p>Episode X</p>
+            <h1>The Yodalorian</h1>
           </div>
-          <p>It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>
-          <p>During the battle, Rebel spies managed to steal secret plans to the Empire’s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
-          <p>Pursued by the Empire’s sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy…</p>
+          <p>It is a period of SQL war. Rebel coders, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>
+          <p>Rebel coders have managed to harness the force to transform the franchises most beloved characters.</p>
+          <p>Defeat the Empire’s sinister agents by selecting your favorite character and applying a range of powerful transformations.</p>
+          <p>Click Below to Begin.</p>
         </div>
       </section>
-      
     </div>
-    <Link to="/chargrid" className="gridlink">Select Your Character</Link>
+    <span><Link className="gridlink" to="/chargrid">Select Your Character</Link></span>
     </>
   )
 }

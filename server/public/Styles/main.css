@@ -61,9 +61,8 @@ body {
 
 /* home page scroll styling */
 .gridlink {
-  text-align: center;
   margin: 0 auto;
-  width: 20px;
+  width: 100%;
 }
 
 .home-body {
