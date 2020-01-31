@@ -10,12 +10,11 @@ const Animation = props => {
   console.log(id)
 
   return (
-    <>
-    <img src={`/Images/${id}.png`} alt="Image of character" className={classes}/>
-    {name === 'dealWithIt' && <img className="glasses" src="glasses.png"/>}
-    <Link to={`/showOptions/${id}`}>GO BACK</Link><br></br>
-    <Link to="/">HOME</Link>
-    </>
+    <div className="container">
+      <img src={`/Images/${id}`} alt="Image of character" className={classes}/>
+      {name === 'dealWithIt' && <img className="glasses" src="glasses.png"/>}
+      <Link to={`/showOptions/${id}`}><h3 className="hate">Choose another animation</h3></Link><br></br>
+    </div>
   )
 }
 

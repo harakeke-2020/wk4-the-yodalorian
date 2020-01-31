@@ -1,5 +1,6 @@
 .character {
-  max-width: 50%;
+  width: 700px;
+  margin-left: 50px;
   position: fixed;
 }
 
@@ -116,11 +117,11 @@
        
        @keyframes glasses {
          from {
-          transform: translate(70%, -200%);
+          transform: translate(60%, -200%);
           visibility: visible
          }
          to {
-          transform: translate(70%, 10%);
+          transform: translate(60%, -5%);
           visibility: visible
          }
        }

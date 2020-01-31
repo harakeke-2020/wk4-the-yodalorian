@@ -9,7 +9,7 @@ import CharacterGrid from './CharacterGrid'
 const App = () => {
   return (
     <>
-      {/* <img className="bigtitle" src="/Images/title.png" /> */}
+      <Link to="/chargrid"><img className="bigtitle" src="/Images/title.png" /></Link>
       <h1>The Yodalorian</h1>
       <Route exact path="/" component={Home}></Route>
       <Route path="/chargrid" component={CharacterGrid}></Route>

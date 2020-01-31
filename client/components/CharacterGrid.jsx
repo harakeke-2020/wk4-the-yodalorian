@@ -8,7 +8,7 @@ const CharacterGrid = () => {
       <ul className="grid-container">
         <Link className="topleft" to="/showcharacter/yoda.png"><img className="home-char-img" src="/Images/yoda.png" alt="Image of Character"/></Link>
         <Link className="topmiddle" to="/showcharacter/jabba.png"><img className="home-char-img" src="/Images/jabba.png" alt="Image of Character"/></Link>
-        <Link className="topright" to="/showcharacter/niennunb"><img className="home-char-img" src="/Images/niennunb.jpg" alt="Image of Character"/></Link>
+        <Link className="topright" to="/showcharacter/niennunb.jpg"><img className="home-char-img" src="/Images/niennunb.jpg" alt="Image of Character"/></Link>
 
         <Link className="centerleft" to="/showcharacter/jarjar.jpg"><img className="home-char-img" src="/Images/jarjar.jpg" alt="Image of Character"/></Link>
         <Link className="centermiddle" to="/showcharacter/maxribo.jpg"><img className="home-char-img" src="/Images/maxribo.jpg" alt="Image of Character"/></Link>
