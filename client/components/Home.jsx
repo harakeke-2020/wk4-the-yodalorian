@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
+import ReactSound from 'react-sound'
 
-const Home = () => {
-  return (
+class Home extends React.Component {
+  render () {
+    return (
     <>
-    <audio controls>
-      <source src="maintheme.mp3" type="audio/mp3">
-    </audio>
+    <ReactSound
+      url="/audio/maintheme.mp3"
+      playStatus={(ReactSound.status.PLAYING)}
+      onLoading={this.handleSongLoading}
+    />
     <Link className="gridlink" to="/chargrid">
       <div className="home-body">
         <div className="fade"></div>
@@ -28,7 +32,8 @@ const Home = () => {
       </div>
     </Link>
     </>
-  )
+    )
+  }
 }
 
 export default Home

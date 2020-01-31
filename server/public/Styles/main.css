@@ -10,6 +10,23 @@ audio {
   display: none;
 }
 
+.wtf {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+.homebtn {
+  background-color: yellow;
+  font-size: 2em;
+  padding: 3em;
+  margin-left: 40vw;
+  margin-top: 35vh;
+  border-radius: 5px;
+  border-style: none;
+}
+
 /* styling for character grid */
 
 .grid-container {
