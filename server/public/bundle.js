@@ -203,7 +203,7 @@ var CharacterGrid = function CharacterGrid() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "bigtitle",
     src: "/Images/title.png"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "SELECT YOUR CHARACTER"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "grid-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "topleft",
@@ -291,7 +291,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "gridlink",
+    to: "/chargrid"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "home-body"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "fade"
@@ -301,10 +304,7 @@ var Home = function Home() {
     className: "crawl"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Episode X"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Yodalorian")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is a period of SQL war. Rebel coders, striking from a hidden base, have won their first victory against the evil Galactic Empire."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rebel coders have managed to harness the force to transform the franchises most beloved characters."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Defeat the Empire\u2019s sinister agents by selecting your favorite character and applying a range of powerful transformations."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Click Below to Begin.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "gridlink",
-    to: "/chargrid"
-  }, "Select Your Character")));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Episode X"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Yodalorian")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is a period of SQL war. Rebel coders, striking from a hidden base, have won their first victory against the evil Galactic Empire."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rebel coders have managed to harness the force to transform the franchises most beloved characters."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Defeat the Empire\u2019s sinister agents by selecting your favorite character and applying a range of powerful transformations."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Click Below to Begin."))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);

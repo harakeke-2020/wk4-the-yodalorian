@@ -5,7 +5,6 @@ const CharacterGrid = () => {
   return (
     <>
     <Link to="/chargrid"><img className="bigtitle" src="/Images/title.png" /></Link>
-    <h2>SELECT YOUR CHARACTER</h2>
       <ul className="grid-container">
         <Link className="topleft" to="/showcharacter/yoda.png"><img className="home-char-img" src="/Images/yoda.png" alt="Image of Character"/></Link>
         <Link className="topmiddle" to="/showcharacter/jabba.png"><img className="home-char-img" src="/Images/jabba.png" alt="Image of Character"/></Link>
